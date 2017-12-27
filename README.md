@@ -1,2 +1,2 @@
-# personalizations
-Personal style elements
+# Personalizations
+Personal style elements for git, vim, bash, ...
