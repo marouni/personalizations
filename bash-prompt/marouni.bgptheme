@@ -13,7 +13,10 @@ override_git_prompt_colors() {
   GIT_PROMPT_CLEAN="${Green}✔ "
   GIT_PROMPT_COMMAND_OK="${Green}✔ "
   GIT_PROMPT_START="${DOWNBAR}${HORBAR}[_LAST_COMMAND_INDICATOR_${ResetColor}]${HORBAR}[${Blue}${PathShort}${ResetColor}]"
-  GIT_PROMPT_END=" \n$UPBAR$HORBARPLUG[${Time12a}]$HORBAR[${Yellow}\u${ResetColor}@${Blue}\h${ResetColor}]$ "
+  # Simple prompt end
+  GIT_PROMPT_END=" \n$UPBAR$HORBARPLUG${ResetColor} "
+  # Full prompt end with date, username and hostname
+  # GIT_PROMPT_END=" \n$UPBAR$HORBARPLUG[${Time12a}]$HORBAR[${Yellow}\u${ResetColor}@${Blue}\h${ResetColor}]$ "
 }
 
 reload_git_prompt_colors "Solarized Ubuntu"
