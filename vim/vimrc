@@ -16,7 +16,6 @@ Plugin 'gmarik/Vundle.vim'
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'scrooloose/nerdtree'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'scrooloose/syntastic'
@@ -24,6 +23,7 @@ Plugin 'nvie/vim-flake8'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'klen/python-mode'
 Plugin 'derekwyatt/vim-scala'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 call vundle#end()
 
@@ -33,16 +33,22 @@ filetype plugin indent on
 " ==================
 " Display
 set number
+set showcmd
+set cursorline
+set wildmenu
+colorscheme solarized
 
 "set ruler
 " Search
 set hlsearch
+set incsearch
 set smartcase
 
 " Tabs
-set shiftwidth=8
-set softtabstop=8
-set tabstop=8
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
+set expandtab
 "set textwidth=80
 
 " Syntax
