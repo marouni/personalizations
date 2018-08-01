@@ -186,3 +186,8 @@ let g:pymode_rope = 0
 
 " disable paste brackted mode
 set t_BE=
+
+" Remember last line
+if has("autocmd")
+      au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+endif
